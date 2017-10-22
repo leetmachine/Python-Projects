@@ -20,10 +20,9 @@ ENTER 'REMOVE' to delete an item from your list.""")
 def show_list():
     clear()
     print('Here is your list: ')
-    index = 1
-    for item in shopping_list:
+
+    for index, item in enumerate(shopping_list, start=1):
         print("{}. {}".format(index, item))
-        index += 1
     
     print("-"*10)
 
